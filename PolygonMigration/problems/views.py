@@ -12,7 +12,7 @@ import logging
 import json
 from django.contrib.auth.decorators import user_passes_test
 from django.db import transaction
-
+from problems.storage import get_storage
 logger = logging.getLogger(__name__)
 
 def parse_problem_html(html_content):
@@ -181,70 +181,51 @@ def index(request):
                         logger.error('Error fetching solution: %s', e)
                         main_solution = None
                     context['main_solution'] = main_solution
-            
+
+            storage_uploaded = False
+            storage_problem_id = None
             try:
                 with transaction.atomic():
-                    # Handle Azure migration
-                    azure_blob_uploaded = False
-                    azure_blob_problem_id = None
-                    if migrate_to_azure:
-                        logger.info('Azure migration triggered for polygon_id=%s', polygon_id)
+
+                # Handle storage migration (provider chosen by STORAGE_PROVIDER in .env)
+                    if migrate_to_azure:  # POST field name kept so the template needs no change
+                        logger.info('Storage migration triggered for polygon_id=%s', polygon_id)
                         problem_obj = Problem.objects.filter(polygon_id=polygon_id).first()
                         if not problem_obj:
                             logger.warning('Problem with Polygon ID %s not in DB', polygon_id)
-                            context['error'] = f"Problem with Polygon ID {polygon_id} has not been migrated to the database yet. Please migrate the problem to the database first before migrating test cases to Azure."
+                            context['error'] = (f"Problem with Polygon ID {polygon_id} has not been migrated "
+                                                "to the database yet. Please migrate the problem to the "
+                                                "database first before migrating test cases to storage.")
                             return render(request, 'problems/index.html', context)
-                        
-                        # Problem exists in database, proceed with Azure migration
-                        logger.info('Problem found in DB, proceeding with Azure migration')
-                        AZURE_STORAGE_ACCOUNT_URL = settings.AZURE_STORAGE_ACCOUNT_URL
-                        AZURE_TENANT_ID = settings.AZURE_TENANT_ID
-                        AZURE_CLIENT_ID = settings.AZURE_CLIENT_ID
-                        AZURE_USERNAME = settings.AZURE_USERNAME
-                        AZURE_PASSWORD = settings.AZURE_PASSWORD
-                        AZURE_CONTAINER_NAME = settings.AZURE_CONTAINER_NAME
-                        
-                        # Use the database problem ID for Azure blob naming
-                        problem_id = problem_obj.id if problem_obj else None
-                        logger.info('Azure migration params: problem_id=%s, container=%s', problem_id, AZURE_CONTAINER_NAME)
-                        
-                        # Remove Redis cache for this problem id before Azure migration
-                        if problem_obj:
-                            api.delete_problem_test_case_cache(problem_id)
-                        
-                        # Check for custom checker before migration
+
+                        # The database problem ID is used for the folder name
+                        problem_id = problem_obj.id
+                        storage = get_storage()
+
+                        # Remove Redis cache for this problem before migrating
+                        api.delete_problem_test_case_cache(problem_id)
+
                         custom_checker_info = api.get_custom_checker_info(polygon_id)
                         if custom_checker_info:
-                            logger.info('Custom checker detected before Azure migration: %s', custom_checker_info)
-                            context['info'] = f"Custom checker '{custom_checker_info['name']}' detected. Will be compiled and uploaded to Azure."
-                        
-                        logger.info('Calling migrate_to_azure_blob')
+                            context['info'] = (f"Custom checker '{custom_checker_info['name']}' detected. "
+                                               "Will be compiled and uploaded to storage.")
+
                         try:
-                            api.migrate_to_azure_blob(
-                                polygon_id,
-                                AZURE_STORAGE_ACCOUNT_URL,
-                                AZURE_TENANT_ID,
-                                AZURE_CLIENT_ID,
-                                AZURE_USERNAME,
-                                AZURE_PASSWORD,
-                                AZURE_CONTAINER_NAME,
-                                problem_id
-                            )
-                            azure_blob_uploaded = True
-                            azure_blob_problem_id = problem_id
+                            api.migrate_test_cases_to_storage(polygon_id, storage, problem_id)
+                            storage_uploaded = True
+                            storage_problem_id = problem_id
                         except Exception as e:
-                            logger.error('Azure migration failed: %s', e, exc_info=True)
-                            # Compensate: attempt to delete any uploaded blobs if possible (pseudo-code, implement as needed)
-                            # api.delete_azure_blob(problem_id)
-                            context['error'] = f"Azure migration failed: {str(e)}"
+                            logger.error('Storage migration failed: %s', e, exc_info=True)
+                            context['error'] = f"Storage migration failed: {str(e)}"
                             raise
-                        logger.info('Azure migration completed successfully')
-                        
-                        success_message = "Test cases migrated to Azure Blob Storage successfully."
+
+                        success_message = (f"Test cases migrated to storage "
+                                           f"({settings.STORAGE_PROVIDER}) successfully.")
                         if custom_checker_info:
-                            success_message += f" Custom checker '{custom_checker_info['name']}' was also compiled and uploaded."
+                            success_message += (f" Custom checker '{custom_checker_info['name']}' "
+                                                "was also compiled and uploaded.")
                         context['success'] = success_message
-                    
+
                     # Always fetch problem data for display
                     info = api.get_problem_info(polygon_id)
                     logger.debug('Polygon problem info: %s', info)
@@ -567,11 +548,15 @@ def index(request):
             except Exception as e:
                 logger.error('Exception in index view: %s', e, exc_info=True)
                 context['error'] = f"Migration failed and all changes have been rolled back. Reason: {str(e)}"
-                # Compensate for Azure: attempt to delete any uploaded blobs if azure_blob_uploaded is True (pseudo-code)
-                if azure_blob_uploaded and azure_blob_problem_id:
-                    api.delete_azure_blob(azure_blob_problem_id)
+                # Compensate for storage: remove anything already uploaded
+                if storage_uploaded and storage_problem_id:
+                    try:
+                        get_storage().delete_problem_files(storage_problem_id)
+                    except Exception:
+                        logger.exception('Could not clean up uploaded files')
                 # Compensate for Redis: clear any cached test cases if needed
                 api.clear_test_cases_from_redis(polygon_id)
+            
 
     # Update selected_tags_json after all context updates
     if 'selected_tags' in context:

@@ -106,3 +106,490 @@
 [INFO] 2026-10-07 04:07:52,205 polygon_api | Fetching test cases for 596451, testset
 [DEBUG] 2026-10-07 04:07:52,583 views | test_case_count=17
 [INFO] 2026-10-07 04:07:52,583 views | Exiting index view
+[INFO] 2026-10-07 10:56:46,198 views | Entered index view with method=GET
+[INFO] 2026-10-07 10:56:46,206 views | Exiting index view
+[INFO] 2026-10-07 10:57:39,018 views | Entered index view with method=POST
+[DEBUG] 2026-10-07 10:57:39,021 views | POST data: polygon_id=596451, migrate_to_azure=None, migrate_to_db=None, migrate_test_cases_to_db=None, difficulty=, selected_tags=[], new_tag=
+[DEBUG] 2026-10-07 10:57:39,021 views | All POST data: {'csrfmiddlewaretoken': ['VT5fK48W6TrTqYn1m1U6wnaCiAdDSvh1WlbhAiKLOIuvO1vo8ndtHjEcNEVz8LT1'], 'problem_id': ['596451']}
+[INFO] 2026-10-07 10:57:39,021 views | Processing polygon_id=596451
+[DEBUG] 2026-10-07 10:57:39,029 views | db_problem=None
+[INFO] 2026-10-07 10:57:39,029 polygon_api | Fetching problem info for 596451
+[INFO] 2026-10-07 10:57:39,405 polygon_api | Polygon problem.info response: {'timeLimit': 2000, 'inputFile': 'stdin', 'outputFile': 'stdout', 'interactive': False, 'wellFormed': True, 'memoryLimit': 256, 'skipDuplicatedTestsValidation': False}
+[DEBUG] 2026-10-07 10:57:39,405 views | Polygon problem info: {'timeLimit': 2000, 'inputFile': 'stdin', 'outputFile': 'stdout', 'interactive': False, 'wellFormed': True, 'memoryLimit': 256, 'skipDuplicatedTestsValidation': False}
+[INFO] 2026-10-07 10:57:39,405 polygon_api | Downloading package for problem 596451
+[INFO] 2026-10-07 10:57:39,407 polygon_api | Fetching problem info for 596451
+[INFO] 2026-10-07 10:57:39,730 polygon_api | Polygon problem.info response: {'timeLimit': 2000, 'inputFile': 'stdin', 'outputFile': 'stdout', 'interactive': False, 'wellFormed': True, 'memoryLimit': 256, 'skipDuplicatedTestsValidation': False}
+[INFO] 2026-10-07 10:57:42,444 polygon_api | Successfully read problem.html content, length: 4293 characters
+[DEBUG] 2026-10-07 10:57:42,457 polygon_api | Cleaned up temporary directory: C:\Users\Dell\AppData\Local\Temp\tmprqimwc_k
+[DEBUG] 2026-10-07 10:57:42,458 views | Downloaded and extracted problem_html_content, length: 4293
+[INFO] 2026-10-07 10:57:42,458 views | Entered parse_problem_html with content length=4293
+[DEBUG] 2026-10-07 10:57:42,461 views | Extracted title=two-sum-problem-unique, legend length=448, input_format length=427, output_format length=146
+[INFO] 2026-10-07 10:57:42,461 views | Exiting parse_problem_html
+[DEBUG] 2026-10-07 10:57:42,461 views | Parsed html_data: {'title': 'two-sum-problem-unique', 'legend': '<p>You are given an array of integers $$$a_1, a_2, \\dots, a_n$$$ and an integer target $$$t$$$.</p><p>Find two <span class="tex-font-style-bf">different</span> positions $$$i$$$ and $$$j$$$ ($$$i \\ne j$$$) such that $$$a_i + a_j = t$$$.</p><p>It is guaranteed that exactly one such pair of positions exists. The same element cannot be used twice, but two different positions may contain equal values. You may print the two indices in any order.</p>', 'input_format': '<p>The first line contains two integers $$$n$$$ and $$$t$$$ ($$$2 \\le n \\le 10^4$$$, $$$-10^9 \\le t \\le 10^9$$$) — the number of elements in the array and the target sum.</p><p>The second line contains $$$n$$$ integers $$$a_1, a_2, \\dots, a_n$$$ ($$$-10^9 \\le a_i \\le 10^9$$$) — the elements of the array.</p><p>It is guaranteed that there is exactly one pair of distinct indices $$$(i, j)$$$ such that $$$a_i + a_j = t$$$.</p>', 'output_format': '<p>Print two distinct integers — the $$$1$$$-based indices $$$i$$$ and $$$j$$$ such that $$$a_i + a_j = t$$$. You may print them in any order.</p>', 'notes': '<p>In the first example, $$$a_1 + a_2 = 2 + 7 = 9$$$, so the answer is <span class="tex-font-style-tt">1 2</span>.</p><p>In the second example, $$$a_2 + a_3 = 2 + 4 = 6$$$. Note that $$$a_1 = 3$$$ cannot be paired with itself, so <span class="tex-font-style-tt">1 1</span> is not a valid answer.</p><p>In the third example, both elements are equal to $$$3$$$, and since they are at different positions, <span class="tex-font-style-tt">1 2</span> is a valid answer.</p>'}
+[INFO] 2026-10-07 10:57:42,462 polygon_api | Fetching all test cases for 596451, testset
+[INFO] 2026-10-07 10:57:42,798 polygon_api | Found 17 test cases to process
+[INFO] 2026-10-07 10:57:42,798 polygon_api | Processing test case 1/17 (index: 1)
+[DEBUG] 2026-10-07 10:57:42,798 polygon_api | Fetching input for test case 1
+[DEBUG] 2026-10-07 10:57:57,610 polygon_api | Fetching output for test case 1
+[INFO] 2026-10-07 10:57:57,994 polygon_api | Successfully fetched test case 1 - Input length: 16, Output length: 5
+[INFO] 2026-10-07 10:57:57,994 polygon_api | Processing test case 2/17 (index: 2)
+[DEBUG] 2026-10-07 10:57:57,994 polygon_api | Fetching input for test case 2
+[DEBUG] 2026-10-07 10:58:00,138 polygon_api | Fetching output for test case 2
+[INFO] 2026-10-07 10:58:00,542 polygon_api | Successfully fetched test case 2 - Input length: 12, Output length: 5
+[INFO] 2026-10-07 10:58:00,543 polygon_api | Processing test case 3/17 (index: 3)
+[DEBUG] 2026-10-07 10:58:00,543 polygon_api | Fetching input for test case 3
+[DEBUG] 2026-10-07 10:58:01,551 polygon_api | Fetching output for test case 3
+[INFO] 2026-10-07 10:58:01,938 polygon_api | Successfully fetched test case 3 - Input length: 10, Output length: 5
+[INFO] 2026-10-07 10:58:01,938 polygon_api | Processing test case 4/17 (index: 4)
+[DEBUG] 2026-10-07 10:58:01,938 polygon_api | Fetching input for test case 4
+[DEBUG] 2026-10-07 10:58:13,016 polygon_api | Fetching output for test case 4
+[INFO] 2026-10-07 10:58:13,401 polygon_api | Successfully fetched test case 4 - Input length: 13, Output length: 5
+[INFO] 2026-10-07 10:58:13,402 polygon_api | Processing test case 5/17 (index: 5)
+[DEBUG] 2026-10-07 10:58:13,402 polygon_api | Fetching input for test case 5
+[DEBUG] 2026-10-07 10:58:14,756 polygon_api | Fetching output for test case 5
+[INFO] 2026-10-07 10:58:15,127 polygon_api | Successfully fetched test case 5 - Input length: 19, Output length: 5
+[INFO] 2026-10-07 10:58:15,127 polygon_api | Processing test case 6/17 (index: 6)
+[DEBUG] 2026-10-07 10:58:15,128 polygon_api | Fetching input for test case 6
+[DEBUG] 2026-10-07 10:58:16,760 polygon_api | Fetching output for test case 6
+[INFO] 2026-10-07 10:58:17,140 polygon_api | Successfully fetched test case 6 - Input length: 39, Output length: 5
+[INFO] 2026-10-07 10:58:17,141 polygon_api | Processing test case 7/17 (index: 7)
+[DEBUG] 2026-10-07 10:58:17,141 polygon_api | Fetching input for test case 7
+[DEBUG] 2026-10-07 10:58:18,825 polygon_api | Fetching output for test case 7
+[INFO] 2026-10-07 10:58:19,218 polygon_api | Successfully fetched test case 7 - Input length: 39, Output length: 5
+[INFO] 2026-10-07 10:58:19,218 polygon_api | Processing test case 8/17 (index: 8)
+[DEBUG] 2026-10-07 10:58:19,218 polygon_api | Fetching input for test case 8
+[DEBUG] 2026-10-07 10:58:21,747 polygon_api | Fetching output for test case 8
+[INFO] 2026-10-07 10:58:22,125 polygon_api | Successfully fetched test case 8 - Input length: 346, Output length: 7
+[INFO] 2026-10-07 10:58:22,125 polygon_api | Processing test case 9/17 (index: 9)
+[DEBUG] 2026-10-07 10:58:22,125 polygon_api | Fetching input for test case 9
+[DEBUG] 2026-10-07 10:58:23,473 polygon_api | Fetching output for test case 9
+[INFO] 2026-10-07 10:58:23,850 polygon_api | Successfully fetched test case 9 - Input length: 1053, Output length: 7
+[INFO] 2026-10-07 10:58:23,850 polygon_api | Processing test case 10/17 (index: 10)
+[DEBUG] 2026-10-07 10:58:23,851 polygon_api | Fetching input for test case 10
+[DEBUG] 2026-10-07 10:58:25,411 polygon_api | Fetching output for test case 10
+[INFO] 2026-10-07 10:58:25,804 polygon_api | Successfully fetched test case 10 - Input length: 4395, Output length: 9
+[INFO] 2026-10-07 10:58:25,804 polygon_api | Processing test case 11/17 (index: 11)
+[DEBUG] 2026-10-07 10:58:25,804 polygon_api | Fetching input for test case 11
+[DEBUG] 2026-10-07 10:58:27,235 polygon_api | Fetching output for test case 11
+[INFO] 2026-10-07 10:58:27,609 polygon_api | Successfully fetched test case 11 - Input length: 10399, Output length: 9
+[INFO] 2026-10-07 10:58:27,609 polygon_api | Processing test case 12/17 (index: 12)
+[DEBUG] 2026-10-07 10:58:27,609 polygon_api | Fetching input for test case 12
+[DEBUG] 2026-10-07 10:58:29,361 polygon_api | Fetching output for test case 12
+[INFO] 2026-10-07 10:58:29,744 polygon_api | Successfully fetched test case 12 - Input length: 103948, Output length: 11
+[INFO] 2026-10-07 10:58:29,744 polygon_api | Processing test case 13/17 (index: 13)
+[DEBUG] 2026-10-07 10:58:29,744 polygon_api | Fetching input for test case 13
+[DEBUG] 2026-10-07 10:58:31,536 polygon_api | Fetching output for test case 13
+[INFO] 2026-10-07 10:58:31,921 polygon_api | Successfully fetched test case 13 - Input length: 103942, Output length: 11
+[INFO] 2026-10-07 10:58:31,921 polygon_api | Processing test case 14/17 (index: 14)
+[DEBUG] 2026-10-07 10:58:31,922 polygon_api | Fetching input for test case 14
+[DEBUG] 2026-10-07 10:58:33,456 polygon_api | Fetching output for test case 14
+[INFO] 2026-10-07 10:58:33,845 polygon_api | Successfully fetched test case 14 - Input length: 63946, Output length: 11
+[INFO] 2026-10-07 10:58:33,845 polygon_api | Processing test case 15/17 (index: 15)
+[DEBUG] 2026-10-07 10:58:33,845 polygon_api | Fetching input for test case 15
+[DEBUG] 2026-10-07 10:58:35,727 polygon_api | Fetching output for test case 15
+[INFO] 2026-10-07 10:58:36,106 polygon_api | Successfully fetched test case 15 - Input length: 59714, Output length: 11
+[INFO] 2026-10-07 10:58:36,107 polygon_api | Processing test case 16/17 (index: 16)
+[DEBUG] 2026-10-07 10:58:36,107 polygon_api | Fetching input for test case 16
+[DEBUG] 2026-10-07 10:58:37,005 polygon_api | Fetching output for test case 16
+[INFO] 2026-10-07 10:58:37,370 polygon_api | Successfully fetched test case 16 - Input length: 28, Output length: 5
+[INFO] 2026-10-07 10:58:37,370 polygon_api | Processing test case 17/17 (index: 17)
+[DEBUG] 2026-10-07 10:58:37,370 polygon_api | Fetching input for test case 17
+[DEBUG] 2026-10-07 10:58:38,177 polygon_api | Fetching output for test case 17
+[INFO] 2026-10-07 10:58:38,560 polygon_api | Successfully fetched test case 17 - Input length: 30, Output length: 5
+[INFO] 2026-10-07 10:58:38,560 polygon_api | Completed fetching all 17 test cases for problem 596451
+[DEBUG] 2026-10-07 10:58:38,560 views | Fetched all test cases.
+[INFO] 2026-10-07 10:58:40,604 polygon_api | Stored 17 test cases in Redis for polygon_id 596451
+[DEBUG] 2026-10-07 10:58:40,931 views | checker_type=check.cpp
+[INFO] 2026-10-07 10:58:40,932 polygon_api | Fetching custom checker info for problem 596451
+[DEBUG] 2026-10-07 10:58:41,261 polygon_api | Raw checker info: check.cpp
+[INFO] 2026-10-07 10:58:41,261 polygon_api | Custom checker detected: {'name': 'check.cpp', 'type': 'custom'}
+[INFO] 2026-10-07 10:58:41,261 polygon_api | Fetching test cases for 596451, testset
+[DEBUG] 2026-10-07 10:58:41,590 views | test_case_count=17
+[INFO] 2026-10-07 10:58:41,591 views | Exiting index view
+[INFO] 2026-10-07 10:59:28,914 views | Entered index view with method=POST
+[DEBUG] 2026-10-07 10:59:28,916 views | POST data: polygon_id=596451, migrate_to_azure=None, migrate_to_db=1, migrate_test_cases_to_db=None, difficulty=medium, selected_tags=[], new_tag=
+[DEBUG] 2026-10-07 10:59:28,917 views | All POST data: {'csrfmiddlewaretoken': ['Vc6Te3490Etnlr7LkcfzV6Xubz0UQGQEWEcV4hGYItwZJuf86yyW62r4GDIQ6WsE'], 'problem_id': ['596451'], 'migrate_to_db': ['1'], 'difficulty': ['medium']}
+[INFO] 2026-10-07 10:59:28,917 views | Processing polygon_id=596451
+[DEBUG] 2026-10-07 10:59:28,920 views | db_problem=None
+[INFO] 2026-10-07 10:59:28,920 polygon_api | Fetching problem info for 596451
+[INFO] 2026-10-07 10:59:29,248 polygon_api | Polygon problem.info response: {'timeLimit': 2000, 'inputFile': 'stdin', 'outputFile': 'stdout', 'interactive': False, 'wellFormed': True, 'memoryLimit': 256, 'skipDuplicatedTestsValidation': False}
+[DEBUG] 2026-10-07 10:59:29,248 views | Polygon problem info: {'timeLimit': 2000, 'inputFile': 'stdin', 'outputFile': 'stdout', 'interactive': False, 'wellFormed': True, 'memoryLimit': 256, 'skipDuplicatedTestsValidation': False}
+[INFO] 2026-10-07 10:59:29,248 polygon_api | Downloading package for problem 596451
+[INFO] 2026-10-07 10:59:29,249 polygon_api | Fetching problem info for 596451
+[INFO] 2026-10-07 10:59:29,575 polygon_api | Polygon problem.info response: {'timeLimit': 2000, 'inputFile': 'stdin', 'outputFile': 'stdout', 'interactive': False, 'wellFormed': True, 'memoryLimit': 256, 'skipDuplicatedTestsValidation': False}
+[INFO] 2026-10-07 10:59:32,139 polygon_api | Successfully read problem.html content, length: 4293 characters
+[DEBUG] 2026-10-07 10:59:32,152 polygon_api | Cleaned up temporary directory: C:\Users\Dell\AppData\Local\Temp\tmpbfhmpcyl
+[DEBUG] 2026-10-07 10:59:32,153 views | Downloaded and extracted problem_html_content, length: 4293
+[INFO] 2026-10-07 10:59:32,153 views | Entered parse_problem_html with content length=4293
+[DEBUG] 2026-10-07 10:59:32,154 views | Extracted title=two-sum-problem-unique, legend length=448, input_format length=427, output_format length=146
+[INFO] 2026-10-07 10:59:32,154 views | Exiting parse_problem_html
+[DEBUG] 2026-10-07 10:59:32,155 views | Parsed html_data: {'title': 'two-sum-problem-unique', 'legend': '<p>You are given an array of integers $$$a_1, a_2, \\dots, a_n$$$ and an integer target $$$t$$$.</p><p>Find two <span class="tex-font-style-bf">different</span> positions $$$i$$$ and $$$j$$$ ($$$i \\ne j$$$) such that $$$a_i + a_j = t$$$.</p><p>It is guaranteed that exactly one such pair of positions exists. The same element cannot be used twice, but two different positions may contain equal values. You may print the two indices in any order.</p>', 'input_format': '<p>The first line contains two integers $$$n$$$ and $$$t$$$ ($$$2 \\le n \\le 10^4$$$, $$$-10^9 \\le t \\le 10^9$$$) — the number of elements in the array and the target sum.</p><p>The second line contains $$$n$$$ integers $$$a_1, a_2, \\dots, a_n$$$ ($$$-10^9 \\le a_i \\le 10^9$$$) — the elements of the array.</p><p>It is guaranteed that there is exactly one pair of distinct indices $$$(i, j)$$$ such that $$$a_i + a_j = t$$$.</p>', 'output_format': '<p>Print two distinct integers — the $$$1$$$-based indices $$$i$$$ and $$$j$$$ such that $$$a_i + a_j = t$$$. You may print them in any order.</p>', 'notes': '<p>In the first example, $$$a_1 + a_2 = 2 + 7 = 9$$$, so the answer is <span class="tex-font-style-tt">1 2</span>.</p><p>In the second example, $$$a_2 + a_3 = 2 + 4 = 6$$$. Note that $$$a_1 = 3$$$ cannot be paired with itself, so <span class="tex-font-style-tt">1 1</span> is not a valid answer.</p><p>In the third example, both elements are equal to $$$3$$$, and since they are at different positions, <span class="tex-font-style-tt">1 2</span> is a valid answer.</p>'}
+[INFO] 2026-10-07 10:59:34,181 polygon_api | Retrieved 17 test cases from Redis for polygon_id 596451
+[INFO] 2026-10-07 10:59:34,181 views | Retrieved test cases from Redis for test case migration to DB (saved Polygon API call)
+[DEBUG] 2026-10-07 10:59:34,492 views | checker_type=check.cpp
+[INFO] 2026-10-07 10:59:34,492 polygon_api | Fetching custom checker info for problem 596451
+[DEBUG] 2026-10-07 10:59:34,813 polygon_api | Raw checker info: check.cpp
+[INFO] 2026-10-07 10:59:34,813 polygon_api | Custom checker detected: {'name': 'check.cpp', 'type': 'custom'}
+[INFO] 2026-10-07 10:59:34,814 polygon_api | Fetching test cases for 596451, testset
+[DEBUG] 2026-10-07 10:59:35,133 views | test_case_count=17
+[INFO] 2026-10-07 10:59:35,133 views | Starting DB migration for polygon_id=596451
+[INFO] 2026-10-07 10:59:35,135 views | Creating new Problem in DB
+[INFO] 2026-10-07 10:59:35,149 views | Processing tags for problem
+[DEBUG] 2026-10-07 10:59:35,149 views | Selected tags before processing: []
+[DEBUG] 2026-10-07 10:59:35,150 views | New tag before processing: 
+[DEBUG] 2026-10-07 10:59:35,161 views | Cleared existing tags for problem 1
+[DEBUG] 2026-10-07 10:59:35,162 views | Final tags after processing: []
+[INFO] 2026-10-07 10:59:37,212 polygon_api | Retrieved 17 test cases from Redis for polygon_id 596451
+[INFO] 2026-10-07 10:59:37,212 views | Retrieved test cases from Redis for test case migration to DB (saved Polygon API call)
+[DEBUG] 2026-10-07 10:59:37,212 views | test_cases for DB migration.
+[DEBUG] 2026-10-07 10:59:37,212 views | sample_tests: [{'index': 1, 'input': '4 9\r\n2 7 11 15\r\n', 'output': '1 2\r\n', 'description': '', 'is_sample': True}, {'index': 2, 'input': '3 6\r\n3 2 4\r\n', 'output': '2 3\r\n', 'description': '', 'is_sample': True}, {'index': 3, 'input': '2 6\r\n3 3\r\n', 'output': '1 2\r\n', 'description': '', 'is_sample': True}]
+[DEBUG] 2026-10-07 10:59:37,218 views | Sample test idx=0, input_data=4 9
+2 7 11 15, output_data=1 2
+[DEBUG] 2026-10-07 10:59:37,221 views | Sample test idx=1, input_data=3 6
+3 2 4, output_data=2 3
+[DEBUG] 2026-10-07 10:59:37,222 views | Sample test idx=2, input_data=2 6
+3 3, output_data=1 2
+[DEBUG] 2026-10-07 10:59:37,543 views | Fetched solutions: [{'name': 'solution.cpp', 'modificationTimeSeconds': 1791322659, 'length': 448, 'tag': 'MA', 'sourceType': 'cpp.gcc14-64-msys2-g++23'}]
+[INFO] 2026-10-07 10:59:37,867 views | Exiting index view
+[INFO] 2026-10-07 11:12:28,542 views | Entered index view with method=POST
+[DEBUG] 2026-10-07 11:12:28,545 views | POST data: polygon_id=596451, migrate_to_azure=None, migrate_to_db=1, migrate_test_cases_to_db=None, difficulty=medium, selected_tags=[], new_tag=
+[DEBUG] 2026-10-07 11:12:28,545 views | All POST data: {'csrfmiddlewaretoken': ['4heAFoLb2wLIx4madekMt7d3TuHDszqM5JkCvCn0KlOkV7uxZAD9E3HDoypzIP2M'], 'problem_id': ['596451'], 'migrate_to_db': ['1'], 'difficulty': ['medium']}
+[INFO] 2026-10-07 11:12:28,545 views | Processing polygon_id=596451
+[DEBUG] 2026-10-07 11:12:28,550 views | db_problem=two-sum-problem-unique
+[DEBUG] 2026-10-07 11:12:29,648 views | Updated working copy: None
+[DEBUG] 2026-10-07 11:12:29,995 views | Fetched solutions: [{'name': 'solution.cpp', 'modificationTimeSeconds': 1791322659, 'length': 448, 'tag': 'MA', 'sourceType': 'cpp.gcc14-64-msys2-g++23'}]
+[INFO] 2026-10-07 11:12:30,303 polygon_api | Fetching problem info for 596451
+[INFO] 2026-10-07 11:12:30,624 polygon_api | Polygon problem.info response: {'timeLimit': 2000, 'inputFile': 'stdin', 'outputFile': 'stdout', 'interactive': False, 'wellFormed': True, 'memoryLimit': 256, 'skipDuplicatedTestsValidation': False}
+[DEBUG] 2026-10-07 11:12:30,625 views | Polygon problem info: {'timeLimit': 2000, 'inputFile': 'stdin', 'outputFile': 'stdout', 'interactive': False, 'wellFormed': True, 'memoryLimit': 256, 'skipDuplicatedTestsValidation': False}
+[INFO] 2026-10-07 11:12:30,625 polygon_api | Downloading package for problem 596451
+[INFO] 2026-10-07 11:12:30,625 polygon_api | Fetching problem info for 596451
+[INFO] 2026-10-07 11:12:30,972 polygon_api | Polygon problem.info response: {'timeLimit': 2000, 'inputFile': 'stdin', 'outputFile': 'stdout', 'interactive': False, 'wellFormed': True, 'memoryLimit': 256, 'skipDuplicatedTestsValidation': False}
+[INFO] 2026-10-07 11:12:33,394 polygon_api | Successfully read problem.html content, length: 4293 characters
+[DEBUG] 2026-10-07 11:12:33,405 polygon_api | Cleaned up temporary directory: C:\Users\Dell\AppData\Local\Temp\tmpdzcn023k
+[DEBUG] 2026-10-07 11:12:33,406 views | Downloaded and extracted problem_html_content, length: 4293
+[INFO] 2026-10-07 11:12:33,406 views | Entered parse_problem_html with content length=4293
+[DEBUG] 2026-10-07 11:12:33,407 views | Extracted title=two-sum-problem-unique, legend length=448, input_format length=427, output_format length=146
+[INFO] 2026-10-07 11:12:33,408 views | Exiting parse_problem_html
+[DEBUG] 2026-10-07 11:12:33,408 views | Parsed html_data: {'title': 'two-sum-problem-unique', 'legend': '<p>You are given an array of integers $$$a_1, a_2, \\dots, a_n$$$ and an integer target $$$t$$$.</p><p>Find two <span class="tex-font-style-bf">different</span> positions $$$i$$$ and $$$j$$$ ($$$i \\ne j$$$) such that $$$a_i + a_j = t$$$.</p><p>It is guaranteed that exactly one such pair of positions exists. The same element cannot be used twice, but two different positions may contain equal values. You may print the two indices in any order.</p>', 'input_format': '<p>The first line contains two integers $$$n$$$ and $$$t$$$ ($$$2 \\le n \\le 10^4$$$, $$$-10^9 \\le t \\le 10^9$$$) — the number of elements in the array and the target sum.</p><p>The second line contains $$$n$$$ integers $$$a_1, a_2, \\dots, a_n$$$ ($$$-10^9 \\le a_i \\le 10^9$$$) — the elements of the array.</p><p>It is guaranteed that there is exactly one pair of distinct indices $$$(i, j)$$$ such that $$$a_i + a_j = t$$$.</p>', 'output_format': '<p>Print two distinct integers — the $$$1$$$-based indices $$$i$$$ and $$$j$$$ such that $$$a_i + a_j = t$$$. You may print them in any order.</p>', 'notes': '<p>In the first example, $$$a_1 + a_2 = 2 + 7 = 9$$$, so the answer is <span class="tex-font-style-tt">1 2</span>.</p><p>In the second example, $$$a_2 + a_3 = 2 + 4 = 6$$$. Note that $$$a_1 = 3$$$ cannot be paired with itself, so <span class="tex-font-style-tt">1 1</span> is not a valid answer.</p><p>In the third example, both elements are equal to $$$3$$$, and since they are at different positions, <span class="tex-font-style-tt">1 2</span> is a valid answer.</p>'}
+[INFO] 2026-10-07 11:12:35,448 polygon_api | Retrieved 17 test cases from Redis for polygon_id 596451
+[INFO] 2026-10-07 11:12:35,448 views | Retrieved test cases from Redis for test case migration to DB (saved Polygon API call)
+[DEBUG] 2026-10-07 11:12:35,771 views | checker_type=check.cpp
+[INFO] 2026-10-07 11:12:35,771 polygon_api | Fetching custom checker info for problem 596451
+[DEBUG] 2026-10-07 11:12:36,084 polygon_api | Raw checker info: check.cpp
+[INFO] 2026-10-07 11:12:36,084 polygon_api | Custom checker detected: {'name': 'check.cpp', 'type': 'custom'}
+[INFO] 2026-10-07 11:12:36,084 polygon_api | Fetching test cases for 596451, testset
+[DEBUG] 2026-10-07 11:12:36,418 views | test_case_count=17
+[INFO] 2026-10-07 11:12:36,418 views | Starting DB migration for polygon_id=596451
+[INFO] 2026-10-07 11:12:36,419 views | Updating existing Problem in DB
+[INFO] 2026-10-07 11:12:36,420 views | Processing tags for problem
+[DEBUG] 2026-10-07 11:12:36,421 views | Selected tags before processing: []
+[DEBUG] 2026-10-07 11:12:36,421 views | New tag before processing: 
+[DEBUG] 2026-10-07 11:12:36,421 views | Cleared existing tags for problem 1
+[DEBUG] 2026-10-07 11:12:36,422 views | Final tags after processing: []
+[INFO] 2026-10-07 11:12:38,451 polygon_api | Retrieved 17 test cases from Redis for polygon_id 596451
+[INFO] 2026-10-07 11:12:38,451 views | Retrieved test cases from Redis for test case migration to DB (saved Polygon API call)
+[DEBUG] 2026-10-07 11:12:38,452 views | test_cases for DB migration.
+[DEBUG] 2026-10-07 11:12:38,452 views | sample_tests: [{'index': 1, 'input': '4 9\r\n2 7 11 15\r\n', 'output': '1 2\r\n', 'description': '', 'is_sample': True}, {'index': 2, 'input': '3 6\r\n3 2 4\r\n', 'output': '2 3\r\n', 'description': '', 'is_sample': True}, {'index': 3, 'input': '2 6\r\n3 3\r\n', 'output': '1 2\r\n', 'description': '', 'is_sample': True}]
+[DEBUG] 2026-10-07 11:12:38,459 views | Sample test idx=0, input_data=4 9
+2 7 11 15, output_data=1 2
+[DEBUG] 2026-10-07 11:12:38,462 views | Sample test idx=1, input_data=3 6
+3 2 4, output_data=2 3
+[DEBUG] 2026-10-07 11:12:38,464 views | Sample test idx=2, input_data=2 6
+3 3, output_data=1 2
+[DEBUG] 2026-10-07 11:12:38,789 views | Fetched solutions: [{'name': 'solution.cpp', 'modificationTimeSeconds': 1791322659, 'length': 448, 'tag': 'MA', 'sourceType': 'cpp.gcc14-64-msys2-g++23'}]
+[INFO] 2026-10-07 11:12:39,121 views | Exiting index view
+[INFO] 2026-10-07 11:12:50,240 views | Entered index view with method=POST
+[DEBUG] 2026-10-07 11:12:50,242 views | POST data: polygon_id=596451, migrate_to_azure=None, migrate_to_db=None, migrate_test_cases_to_db=1, difficulty=, selected_tags=[], new_tag=
+[DEBUG] 2026-10-07 11:12:50,243 views | All POST data: {'csrfmiddlewaretoken': ['O6uqpqHl7e8fMgB9R8cM0HDYCRqVh3aEPyAsfEjaP3bRajJwDuv9bD7y7V8RxjME'], 'problem_id': ['596451'], 'migrate_test_cases_to_db': ['1']}
+[INFO] 2026-10-07 11:12:50,243 views | Processing polygon_id=596451
+[DEBUG] 2026-10-07 11:12:50,246 views | db_problem=two-sum-problem-unique
+[DEBUG] 2026-10-07 11:12:51,141 views | Updated working copy: None
+[DEBUG] 2026-10-07 11:12:51,465 views | Fetched solutions: [{'name': 'solution.cpp', 'modificationTimeSeconds': 1791322659, 'length': 448, 'tag': 'MA', 'sourceType': 'cpp.gcc14-64-msys2-g++23'}]
+[INFO] 2026-10-07 11:12:51,782 polygon_api | Fetching problem info for 596451
+[INFO] 2026-10-07 11:12:52,100 polygon_api | Polygon problem.info response: {'timeLimit': 2000, 'inputFile': 'stdin', 'outputFile': 'stdout', 'interactive': False, 'wellFormed': True, 'memoryLimit': 256, 'skipDuplicatedTestsValidation': False}
+[DEBUG] 2026-10-07 11:12:52,100 views | Polygon problem info: {'timeLimit': 2000, 'inputFile': 'stdin', 'outputFile': 'stdout', 'interactive': False, 'wellFormed': True, 'memoryLimit': 256, 'skipDuplicatedTestsValidation': False}
+[INFO] 2026-10-07 11:12:52,100 polygon_api | Downloading package for problem 596451
+[INFO] 2026-10-07 11:12:52,101 polygon_api | Fetching problem info for 596451
+[INFO] 2026-10-07 11:12:52,411 polygon_api | Polygon problem.info response: {'timeLimit': 2000, 'inputFile': 'stdin', 'outputFile': 'stdout', 'interactive': False, 'wellFormed': True, 'memoryLimit': 256, 'skipDuplicatedTestsValidation': False}
+[INFO] 2026-10-07 11:12:54,810 polygon_api | Successfully read problem.html content, length: 4293 characters
+[DEBUG] 2026-10-07 11:12:54,823 polygon_api | Cleaned up temporary directory: C:\Users\Dell\AppData\Local\Temp\tmppvd0zk39
+[DEBUG] 2026-10-07 11:12:54,824 views | Downloaded and extracted problem_html_content, length: 4293
+[INFO] 2026-10-07 11:12:54,824 views | Entered parse_problem_html with content length=4293
+[DEBUG] 2026-10-07 11:12:54,825 views | Extracted title=two-sum-problem-unique, legend length=448, input_format length=427, output_format length=146
+[INFO] 2026-10-07 11:12:54,825 views | Exiting parse_problem_html
+[DEBUG] 2026-10-07 11:12:54,825 views | Parsed html_data: {'title': 'two-sum-problem-unique', 'legend': '<p>You are given an array of integers $$$a_1, a_2, \\dots, a_n$$$ and an integer target $$$t$$$.</p><p>Find two <span class="tex-font-style-bf">different</span> positions $$$i$$$ and $$$j$$$ ($$$i \\ne j$$$) such that $$$a_i + a_j = t$$$.</p><p>It is guaranteed that exactly one such pair of positions exists. The same element cannot be used twice, but two different positions may contain equal values. You may print the two indices in any order.</p>', 'input_format': '<p>The first line contains two integers $$$n$$$ and $$$t$$$ ($$$2 \\le n \\le 10^4$$$, $$$-10^9 \\le t \\le 10^9$$$) — the number of elements in the array and the target sum.</p><p>The second line contains $$$n$$$ integers $$$a_1, a_2, \\dots, a_n$$$ ($$$-10^9 \\le a_i \\le 10^9$$$) — the elements of the array.</p><p>It is guaranteed that there is exactly one pair of distinct indices $$$(i, j)$$$ such that $$$a_i + a_j = t$$$.</p>', 'output_format': '<p>Print two distinct integers — the $$$1$$$-based indices $$$i$$$ and $$$j$$$ such that $$$a_i + a_j = t$$$. You may print them in any order.</p>', 'notes': '<p>In the first example, $$$a_1 + a_2 = 2 + 7 = 9$$$, so the answer is <span class="tex-font-style-tt">1 2</span>.</p><p>In the second example, $$$a_2 + a_3 = 2 + 4 = 6$$$. Note that $$$a_1 = 3$$$ cannot be paired with itself, so <span class="tex-font-style-tt">1 1</span> is not a valid answer.</p><p>In the third example, both elements are equal to $$$3$$$, and since they are at different positions, <span class="tex-font-style-tt">1 2</span> is a valid answer.</p>'}
+[INFO] 2026-10-07 11:12:56,873 polygon_api | Retrieved 17 test cases from Redis for polygon_id 596451
+[INFO] 2026-10-07 11:12:56,874 views | Retrieved test cases from Redis for test case migration to DB (saved Polygon API call)
+[DEBUG] 2026-10-07 11:12:57,184 views | checker_type=check.cpp
+[INFO] 2026-10-07 11:12:57,184 polygon_api | Fetching custom checker info for problem 596451
+[DEBUG] 2026-10-07 11:12:57,495 polygon_api | Raw checker info: check.cpp
+[INFO] 2026-10-07 11:12:57,495 polygon_api | Custom checker detected: {'name': 'check.cpp', 'type': 'custom'}
+[INFO] 2026-10-07 11:12:57,495 polygon_api | Fetching test cases for 596451, testset
+[DEBUG] 2026-10-07 11:12:57,896 views | test_case_count=17
+[INFO] 2026-10-07 11:12:59,923 polygon_api | Retrieved 17 test cases from Redis for polygon_id 596451
+[INFO] 2026-10-07 11:12:59,923 views | Retrieved test cases from Redis for test case migration to DB (saved Polygon API call)
+[DEBUG] 2026-10-07 11:12:59,923 views | test_cases for DB migration.
+[DEBUG] 2026-10-07 11:12:59,929 views | Test case idx=0, input_data=4 9
+2 7 11 15, output_data=1 2, is_sample=True, description=
+[DEBUG] 2026-10-07 11:12:59,929 views | Test case idx=0, truncated_input_length=14, truncated_output_length=3
+[DEBUG] 2026-10-07 11:12:59,932 views | Test case idx=1, input_data=3 6
+3 2 4, output_data=2 3, is_sample=True, description=
+[DEBUG] 2026-10-07 11:12:59,933 views | Test case idx=1, truncated_input_length=10, truncated_output_length=3
+[DEBUG] 2026-10-07 11:12:59,934 views | Test case idx=2, input_data=2 6
+3 3, output_data=1 2, is_sample=True, description=
+[DEBUG] 2026-10-07 11:12:59,935 views | Test case idx=2, truncated_input_length=8, truncated_output_length=3
+[DEBUG] 2026-10-07 11:12:59,938 views | Test case idx=3, input_data=2 -7
+-5 -2, output_data=1 2, is_sample=False, description=
+[DEBUG] 2026-10-07 11:12:59,939 views | Test case idx=3, truncated_input_length=11, truncated_output_length=3
+[DEBUG] 2026-10-07 11:12:59,940 views | Test case idx=4, input_data=5 14
+-7 3 -7 8 6, output_data=4 5, is_sample=False, description=
+[DEBUG] 2026-10-07 11:12:59,940 views | Test case idx=4, truncated_input_length=17, truncated_output_length=3
+[DEBUG] 2026-10-07 11:12:59,942 views | Test case idx=5, input_data=10 26
+-3 13 0 -17 -9 19 12 -11 13 11, output_data=2 9, is_sample=False, description=
+[DEBUG] 2026-10-07 11:12:59,942 views | Test case idx=5, truncated_input_length=37, truncated_output_length=3
+[DEBUG] 2026-10-07 11:12:59,943 views | Test case idx=6, input_data=10 0
+7 16 -2 -10 -18 -10 -20 -16 3 8, output_data=2 8, is_sample=False, description=
+[DEBUG] 2026-10-07 11:12:59,943 views | Test case idx=6, truncated_input_length=37, truncated_output_length=3
+[DEBUG] 2026-10-07 11:12:59,944 views | Test case idx=7, input_data=100 -28
+85 88 6 86 81 -67 -27 -85 -80 -93 56 -59 ..., output_data=44 79, is_sample=False, description=
+[DEBUG] 2026-10-07 11:12:59,944 views | Test case idx=7, truncated_input_length=260, truncated_output_length=5
+[DEBUG] 2026-10-07 11:12:59,945 views | Test case idx=8, input_data=100 556575146
+664813325 593555085 -363634513 2627..., output_data=77 80, is_sample=False, description=
+[DEBUG] 2026-10-07 11:12:59,946 views | Test case idx=8, truncated_input_length=260, truncated_output_length=5
+[DEBUG] 2026-10-07 11:12:59,947 views | Test case idx=9, input_data=1000 1868
+279 -397 -299 770 -142 -973 -280 -822 2..., output_data=227 898, is_sample=False, description=
+[DEBUG] 2026-10-07 11:12:59,947 views | Test case idx=9, truncated_input_length=260, truncated_output_length=7
+[DEBUG] 2026-10-07 11:12:59,948 views | Test case idx=10, input_data=1000 0
+166109745 601344966 438084480 -534791455 -..., output_data=233 942, is_sample=False, description=
+[DEBUG] 2026-10-07 11:12:59,948 views | Test case idx=10, truncated_input_length=260, truncated_output_length=7
+[DEBUG] 2026-10-07 11:12:59,949 views | Test case idx=11, input_data=10000 4395467
+76991886 -166560963 -623319661 2725..., output_data=4207 7450, is_sample=False, description=
+[DEBUG] 2026-10-07 11:12:59,949 views | Test case idx=11, truncated_input_length=260, truncated_output_length=9
+[DEBUG] 2026-10-07 11:12:59,950 views | Test case idx=12, input_data=10000 -795685242
+-918154057 65803746 981633222 56..., output_data=1999 8225, is_sample=False, description=
+[DEBUG] 2026-10-07 11:12:59,951 views | Test case idx=12, truncated_input_length=260, truncated_output_length=9
+[DEBUG] 2026-10-07 11:12:59,954 views | Test case idx=13, input_data=10000 0
+89679 -66627 21677 -39411 16391 -87629 18..., output_data=8048 9462, is_sample=False, description=
+[DEBUG] 2026-10-07 11:12:59,954 views | Test case idx=13, truncated_input_length=260, truncated_output_length=9
+[DEBUG] 2026-10-07 11:12:59,955 views | Test case idx=14, input_data=10000 2661
+-418 3669 -854 -18090 -1177 -14437 -67..., output_data=5008 6119, is_sample=False, description=
+[DEBUG] 2026-10-07 11:12:59,955 views | Test case idx=14, truncated_input_length=260, truncated_output_length=9
+[DEBUG] 2026-10-07 11:12:59,956 views | Test case idx=15, input_data=2 1000000000
+1000000000 0, output_data=1 2, is_sample=False, description=
+[DEBUG] 2026-10-07 11:12:59,957 views | Test case idx=15, truncated_input_length=26, truncated_output_length=3
+[DEBUG] 2026-10-07 11:12:59,957 views | Test case idx=16, input_data=2 -1000000000
+-1000000000 0, output_data=1 2, is_sample=False, description=
+[DEBUG] 2026-10-07 11:12:59,958 views | Test case idx=16, truncated_input_length=28, truncated_output_length=3
+[INFO] 2026-10-07 11:12:59,960 views | Exiting index view
+[INFO] 2026-10-07 16:36:06,359 views | Entered index view with method=GET
+[INFO] 2026-10-07 16:36:06,367 views | Exiting index view
+[INFO] 2026-10-07 16:36:25,830 views | Entered index view with method=POST
+[DEBUG] 2026-10-07 16:36:25,832 views | POST data: polygon_id=596451, migrate_to_azure=None, migrate_to_db=None, migrate_test_cases_to_db=None, difficulty=, selected_tags=[], new_tag=
+[DEBUG] 2026-10-07 16:36:25,832 views | All POST data: {'csrfmiddlewaretoken': ['1sa3qPgAtTP3T9K6GDjP0mfnGVPZMz352Ug5g3SpbISFhcStsZCcbiJXbZxV2PF5'], 'problem_id': ['596451']}
+[INFO] 2026-10-07 16:36:25,833 views | Processing polygon_id=596451
+[DEBUG] 2026-10-07 16:36:25,837 views | db_problem=two-sum-problem-unique
+[DEBUG] 2026-10-07 16:36:26,959 views | Updated working copy: None
+[DEBUG] 2026-10-07 16:36:27,272 views | Fetched solutions: [{'name': 'solution.cpp', 'modificationTimeSeconds': 1791322659, 'length': 448, 'tag': 'MA', 'sourceType': 'cpp.gcc14-64-msys2-g++23'}]
+[INFO] 2026-10-07 16:36:27,593 polygon_api | Fetching problem info for 596451
+[INFO] 2026-10-07 16:36:27,927 polygon_api | Polygon problem.info response: {'timeLimit': 2000, 'inputFile': 'stdin', 'outputFile': 'stdout', 'interactive': False, 'wellFormed': True, 'memoryLimit': 256, 'skipDuplicatedTestsValidation': False}
+[DEBUG] 2026-10-07 16:36:27,927 views | Polygon problem info: {'timeLimit': 2000, 'inputFile': 'stdin', 'outputFile': 'stdout', 'interactive': False, 'wellFormed': True, 'memoryLimit': 256, 'skipDuplicatedTestsValidation': False}
+[INFO] 2026-10-07 16:36:27,928 polygon_api | Downloading package for problem 596451
+[INFO] 2026-10-07 16:36:27,930 polygon_api | Fetching problem info for 596451
+[INFO] 2026-10-07 16:36:28,261 polygon_api | Polygon problem.info response: {'timeLimit': 2000, 'inputFile': 'stdin', 'outputFile': 'stdout', 'interactive': False, 'wellFormed': True, 'memoryLimit': 256, 'skipDuplicatedTestsValidation': False}
+[INFO] 2026-10-07 16:36:30,853 polygon_api | Successfully read problem.html content, length: 4293 characters
+[DEBUG] 2026-10-07 16:36:30,867 polygon_api | Cleaned up temporary directory: C:\Users\Dell\AppData\Local\Temp\tmp48jpvv6f
+[DEBUG] 2026-10-07 16:36:30,868 views | Downloaded and extracted problem_html_content, length: 4293
+[INFO] 2026-10-07 16:36:30,868 views | Entered parse_problem_html with content length=4293
+[DEBUG] 2026-10-07 16:36:30,872 views | Extracted title=two-sum-problem-unique, legend length=448, input_format length=427, output_format length=146
+[INFO] 2026-10-07 16:36:30,872 views | Exiting parse_problem_html
+[DEBUG] 2026-10-07 16:36:30,872 views | Parsed html_data: {'title': 'two-sum-problem-unique', 'legend': '<p>You are given an array of integers $$$a_1, a_2, \\dots, a_n$$$ and an integer target $$$t$$$.</p><p>Find two <span class="tex-font-style-bf">different</span> positions $$$i$$$ and $$$j$$$ ($$$i \\ne j$$$) such that $$$a_i + a_j = t$$$.</p><p>It is guaranteed that exactly one such pair of positions exists. The same element cannot be used twice, but two different positions may contain equal values. You may print the two indices in any order.</p>', 'input_format': '<p>The first line contains two integers $$$n$$$ and $$$t$$$ ($$$2 \\le n \\le 10^4$$$, $$$-10^9 \\le t \\le 10^9$$$) — the number of elements in the array and the target sum.</p><p>The second line contains $$$n$$$ integers $$$a_1, a_2, \\dots, a_n$$$ ($$$-10^9 \\le a_i \\le 10^9$$$) — the elements of the array.</p><p>It is guaranteed that there is exactly one pair of distinct indices $$$(i, j)$$$ such that $$$a_i + a_j = t$$$.</p>', 'output_format': '<p>Print two distinct integers — the $$$1$$$-based indices $$$i$$$ and $$$j$$$ such that $$$a_i + a_j = t$$$. You may print them in any order.</p>', 'notes': '<p>In the first example, $$$a_1 + a_2 = 2 + 7 = 9$$$, so the answer is <span class="tex-font-style-tt">1 2</span>.</p><p>In the second example, $$$a_2 + a_3 = 2 + 4 = 6$$$. Note that $$$a_1 = 3$$$ cannot be paired with itself, so <span class="tex-font-style-tt">1 1</span> is not a valid answer.</p><p>In the third example, both elements are equal to $$$3$$$, and since they are at different positions, <span class="tex-font-style-tt">1 2</span> is a valid answer.</p>'}
+[INFO] 2026-10-07 16:36:30,873 polygon_api | Fetching all test cases for 596451, testset
+[INFO] 2026-10-07 16:36:31,210 polygon_api | Found 17 test cases to process
+[INFO] 2026-10-07 16:36:31,210 polygon_api | Processing test case 1/17 (index: 1)
+[DEBUG] 2026-10-07 16:36:31,211 polygon_api | Fetching input for test case 1
+[DEBUG] 2026-10-07 16:36:31,776 polygon_api | Fetching output for test case 1
+[INFO] 2026-10-07 16:36:32,183 polygon_api | Successfully fetched test case 1 - Input length: 16, Output length: 5
+[INFO] 2026-10-07 16:36:32,183 polygon_api | Processing test case 2/17 (index: 2)
+[DEBUG] 2026-10-07 16:36:32,184 polygon_api | Fetching input for test case 2
+[DEBUG] 2026-10-07 16:36:32,644 polygon_api | Fetching output for test case 2
+[INFO] 2026-10-07 16:36:33,028 polygon_api | Successfully fetched test case 2 - Input length: 12, Output length: 5
+[INFO] 2026-10-07 16:36:33,029 polygon_api | Processing test case 3/17 (index: 3)
+[DEBUG] 2026-10-07 16:36:33,029 polygon_api | Fetching input for test case 3
+[DEBUG] 2026-10-07 16:36:33,604 polygon_api | Fetching output for test case 3
+[INFO] 2026-10-07 16:36:34,036 polygon_api | Successfully fetched test case 3 - Input length: 10, Output length: 5
+[INFO] 2026-10-07 16:36:34,037 polygon_api | Processing test case 4/17 (index: 4)
+[DEBUG] 2026-10-07 16:36:34,037 polygon_api | Fetching input for test case 4
+[DEBUG] 2026-10-07 16:36:34,558 polygon_api | Fetching output for test case 4
+[INFO] 2026-10-07 16:36:35,097 polygon_api | Successfully fetched test case 4 - Input length: 13, Output length: 5
+[INFO] 2026-10-07 16:36:35,097 polygon_api | Processing test case 5/17 (index: 5)
+[DEBUG] 2026-10-07 16:36:35,097 polygon_api | Fetching input for test case 5
+[DEBUG] 2026-10-07 16:36:36,352 polygon_api | Fetching output for test case 5
+[INFO] 2026-10-07 16:36:36,814 polygon_api | Successfully fetched test case 5 - Input length: 19, Output length: 5
+[INFO] 2026-10-07 16:36:36,814 polygon_api | Processing test case 6/17 (index: 6)
+[DEBUG] 2026-10-07 16:36:36,815 polygon_api | Fetching input for test case 6
+[DEBUG] 2026-10-07 16:36:37,190 polygon_api | Fetching output for test case 6
+[INFO] 2026-10-07 16:36:37,833 polygon_api | Successfully fetched test case 6 - Input length: 39, Output length: 5
+[INFO] 2026-10-07 16:36:37,833 polygon_api | Processing test case 7/17 (index: 7)
+[DEBUG] 2026-10-07 16:36:37,833 polygon_api | Fetching input for test case 7
+[DEBUG] 2026-10-07 16:36:38,323 polygon_api | Fetching output for test case 7
+[INFO] 2026-10-07 16:36:39,155 polygon_api | Successfully fetched test case 7 - Input length: 39, Output length: 5
+[INFO] 2026-10-07 16:36:39,155 polygon_api | Processing test case 8/17 (index: 8)
+[DEBUG] 2026-10-07 16:36:39,155 polygon_api | Fetching input for test case 8
+[DEBUG] 2026-10-07 16:36:39,859 polygon_api | Fetching output for test case 8
+[INFO] 2026-10-07 16:36:40,467 polygon_api | Successfully fetched test case 8 - Input length: 346, Output length: 7
+[INFO] 2026-10-07 16:36:40,467 polygon_api | Processing test case 9/17 (index: 9)
+[DEBUG] 2026-10-07 16:36:40,467 polygon_api | Fetching input for test case 9
+[DEBUG] 2026-10-07 16:36:41,072 polygon_api | Fetching output for test case 9
+[INFO] 2026-10-07 16:36:41,668 polygon_api | Successfully fetched test case 9 - Input length: 1053, Output length: 7
+[INFO] 2026-10-07 16:36:41,668 polygon_api | Processing test case 10/17 (index: 10)
+[DEBUG] 2026-10-07 16:36:41,668 polygon_api | Fetching input for test case 10
+[DEBUG] 2026-10-07 16:36:42,158 polygon_api | Fetching output for test case 10
+[INFO] 2026-10-07 16:36:42,755 polygon_api | Successfully fetched test case 10 - Input length: 4395, Output length: 9
+[INFO] 2026-10-07 16:36:42,756 polygon_api | Processing test case 11/17 (index: 11)
+[DEBUG] 2026-10-07 16:36:42,756 polygon_api | Fetching input for test case 11
+[DEBUG] 2026-10-07 16:36:43,303 polygon_api | Fetching output for test case 11
+[INFO] 2026-10-07 16:36:43,761 polygon_api | Successfully fetched test case 11 - Input length: 10399, Output length: 9
+[INFO] 2026-10-07 16:36:43,761 polygon_api | Processing test case 12/17 (index: 12)
+[DEBUG] 2026-10-07 16:36:43,761 polygon_api | Fetching input for test case 12
+[DEBUG] 2026-10-07 16:36:44,669 polygon_api | Fetching output for test case 12
+[INFO] 2026-10-07 16:36:45,052 polygon_api | Successfully fetched test case 12 - Input length: 103948, Output length: 11
+[INFO] 2026-10-07 16:36:45,052 polygon_api | Processing test case 13/17 (index: 13)
+[DEBUG] 2026-10-07 16:36:45,053 polygon_api | Fetching input for test case 13
+[DEBUG] 2026-10-07 16:36:45,872 polygon_api | Fetching output for test case 13
+[INFO] 2026-10-07 16:36:46,271 polygon_api | Successfully fetched test case 13 - Input length: 103942, Output length: 11
+[INFO] 2026-10-07 16:36:46,271 polygon_api | Processing test case 14/17 (index: 14)
+[DEBUG] 2026-10-07 16:36:46,271 polygon_api | Fetching input for test case 14
+[DEBUG] 2026-10-07 16:36:46,893 polygon_api | Fetching output for test case 14
+[INFO] 2026-10-07 16:36:47,286 polygon_api | Successfully fetched test case 14 - Input length: 63946, Output length: 11
+[INFO] 2026-10-07 16:36:47,287 polygon_api | Processing test case 15/17 (index: 15)
+[DEBUG] 2026-10-07 16:36:47,287 polygon_api | Fetching input for test case 15
+[DEBUG] 2026-10-07 16:36:47,902 polygon_api | Fetching output for test case 15
+[INFO] 2026-10-07 16:36:48,281 polygon_api | Successfully fetched test case 15 - Input length: 59714, Output length: 11
+[INFO] 2026-10-07 16:36:48,282 polygon_api | Processing test case 16/17 (index: 16)
+[DEBUG] 2026-10-07 16:36:48,282 polygon_api | Fetching input for test case 16
+[DEBUG] 2026-10-07 16:36:48,665 polygon_api | Fetching output for test case 16
+[INFO] 2026-10-07 16:36:49,030 polygon_api | Successfully fetched test case 16 - Input length: 28, Output length: 5
+[INFO] 2026-10-07 16:36:49,031 polygon_api | Processing test case 17/17 (index: 17)
+[DEBUG] 2026-10-07 16:36:49,031 polygon_api | Fetching input for test case 17
+[DEBUG] 2026-10-07 16:36:49,432 polygon_api | Fetching output for test case 17
+[INFO] 2026-10-07 16:36:49,818 polygon_api | Successfully fetched test case 17 - Input length: 30, Output length: 5
+[INFO] 2026-10-07 16:36:49,819 polygon_api | Completed fetching all 17 test cases for problem 596451
+[DEBUG] 2026-10-07 16:36:49,819 views | Fetched all test cases.
+[INFO] 2026-10-07 16:36:51,856 polygon_api | Stored 17 test cases in Redis for polygon_id 596451
+[DEBUG] 2026-10-07 16:36:52,201 views | checker_type=check.cpp
+[INFO] 2026-10-07 16:36:52,202 polygon_api | Fetching custom checker info for problem 596451
+[DEBUG] 2026-10-07 16:36:52,507 polygon_api | Raw checker info: check.cpp
+[INFO] 2026-10-07 16:36:52,507 polygon_api | Custom checker detected: {'name': 'check.cpp', 'type': 'custom'}
+[INFO] 2026-10-07 16:36:52,507 polygon_api | Fetching test cases for 596451, testset
+[DEBUG] 2026-10-07 16:36:52,828 views | test_case_count=17
+[INFO] 2026-10-07 16:36:52,828 views | Exiting index view
+[INFO] 2026-10-07 16:37:47,456 views | Entered index view with method=POST
+[DEBUG] 2026-10-07 16:37:47,458 views | POST data: polygon_id=596451, migrate_to_azure=None, migrate_to_db=1, migrate_test_cases_to_db=None, difficulty=easy, selected_tags=[], new_tag=
+[DEBUG] 2026-10-07 16:37:47,459 views | All POST data: {'csrfmiddlewaretoken': ['DDItGdkxMApkMn2cKqQnuA8AlvNNjy69E5OvwrWmupsWaqazwM9KFwCaQzvJzOI9'], 'problem_id': ['596451'], 'migrate_to_db': ['1'], 'difficulty': ['easy']}
+[INFO] 2026-10-07 16:37:47,459 views | Processing polygon_id=596451
+[DEBUG] 2026-10-07 16:37:47,462 views | db_problem=two-sum-problem-unique
+[DEBUG] 2026-10-07 16:37:48,484 views | Updated working copy: None
+[DEBUG] 2026-10-07 16:37:48,813 views | Fetched solutions: [{'name': 'solution.cpp', 'modificationTimeSeconds': 1791322659, 'length': 448, 'tag': 'MA', 'sourceType': 'cpp.gcc14-64-msys2-g++23'}]
+[INFO] 2026-10-07 16:37:49,133 polygon_api | Fetching problem info for 596451
+[INFO] 2026-10-07 16:37:49,443 polygon_api | Polygon problem.info response: {'timeLimit': 2000, 'inputFile': 'stdin', 'outputFile': 'stdout', 'interactive': False, 'wellFormed': True, 'memoryLimit': 256, 'skipDuplicatedTestsValidation': False}
+[DEBUG] 2026-10-07 16:37:49,444 views | Polygon problem info: {'timeLimit': 2000, 'inputFile': 'stdin', 'outputFile': 'stdout', 'interactive': False, 'wellFormed': True, 'memoryLimit': 256, 'skipDuplicatedTestsValidation': False}
+[INFO] 2026-10-07 16:37:49,444 polygon_api | Downloading package for problem 596451
+[INFO] 2026-10-07 16:37:49,445 polygon_api | Fetching problem info for 596451
+[INFO] 2026-10-07 16:37:49,772 polygon_api | Polygon problem.info response: {'timeLimit': 2000, 'inputFile': 'stdin', 'outputFile': 'stdout', 'interactive': False, 'wellFormed': True, 'memoryLimit': 256, 'skipDuplicatedTestsValidation': False}
+[INFO] 2026-10-07 16:37:52,413 polygon_api | Successfully read problem.html content, length: 4293 characters
+[DEBUG] 2026-10-07 16:37:52,424 polygon_api | Cleaned up temporary directory: C:\Users\Dell\AppData\Local\Temp\tmpww3wy8gt
+[DEBUG] 2026-10-07 16:37:52,425 views | Downloaded and extracted problem_html_content, length: 4293
+[INFO] 2026-10-07 16:37:52,425 views | Entered parse_problem_html with content length=4293
+[DEBUG] 2026-10-07 16:37:52,426 views | Extracted title=two-sum-problem-unique, legend length=448, input_format length=427, output_format length=146
+[INFO] 2026-10-07 16:37:52,426 views | Exiting parse_problem_html
+[DEBUG] 2026-10-07 16:37:52,427 views | Parsed html_data: {'title': 'two-sum-problem-unique', 'legend': '<p>You are given an array of integers $$$a_1, a_2, \\dots, a_n$$$ and an integer target $$$t$$$.</p><p>Find two <span class="tex-font-style-bf">different</span> positions $$$i$$$ and $$$j$$$ ($$$i \\ne j$$$) such that $$$a_i + a_j = t$$$.</p><p>It is guaranteed that exactly one such pair of positions exists. The same element cannot be used twice, but two different positions may contain equal values. You may print the two indices in any order.</p>', 'input_format': '<p>The first line contains two integers $$$n$$$ and $$$t$$$ ($$$2 \\le n \\le 10^4$$$, $$$-10^9 \\le t \\le 10^9$$$) — the number of elements in the array and the target sum.</p><p>The second line contains $$$n$$$ integers $$$a_1, a_2, \\dots, a_n$$$ ($$$-10^9 \\le a_i \\le 10^9$$$) — the elements of the array.</p><p>It is guaranteed that there is exactly one pair of distinct indices $$$(i, j)$$$ such that $$$a_i + a_j = t$$$.</p>', 'output_format': '<p>Print two distinct integers — the $$$1$$$-based indices $$$i$$$ and $$$j$$$ such that $$$a_i + a_j = t$$$. You may print them in any order.</p>', 'notes': '<p>In the first example, $$$a_1 + a_2 = 2 + 7 = 9$$$, so the answer is <span class="tex-font-style-tt">1 2</span>.</p><p>In the second example, $$$a_2 + a_3 = 2 + 4 = 6$$$. Note that $$$a_1 = 3$$$ cannot be paired with itself, so <span class="tex-font-style-tt">1 1</span> is not a valid answer.</p><p>In the third example, both elements are equal to $$$3$$$, and since they are at different positions, <span class="tex-font-style-tt">1 2</span> is a valid answer.</p>'}
+[INFO] 2026-10-07 16:37:54,451 polygon_api | Retrieved 17 test cases from Redis for polygon_id 596451
+[INFO] 2026-10-07 16:37:54,451 views | Retrieved test cases from Redis for test case migration to DB (saved Polygon API call)
+[DEBUG] 2026-10-07 16:37:54,763 views | checker_type=check.cpp
+[INFO] 2026-10-07 16:37:54,763 polygon_api | Fetching custom checker info for problem 596451
+[DEBUG] 2026-10-07 16:37:55,069 polygon_api | Raw checker info: check.cpp
+[INFO] 2026-10-07 16:37:55,070 polygon_api | Custom checker detected: {'name': 'check.cpp', 'type': 'custom'}
+[INFO] 2026-10-07 16:37:55,070 polygon_api | Fetching test cases for 596451, testset
+[DEBUG] 2026-10-07 16:37:55,392 views | test_case_count=17
+[INFO] 2026-10-07 16:37:55,392 views | Starting DB migration for polygon_id=596451
+[INFO] 2026-10-07 16:37:55,394 views | Updating existing Problem in DB
+[INFO] 2026-10-07 16:37:55,398 views | Processing tags for problem
+[DEBUG] 2026-10-07 16:37:55,398 views | Selected tags before processing: []
+[DEBUG] 2026-10-07 16:37:55,398 views | New tag before processing: 
+[DEBUG] 2026-10-07 16:37:55,400 views | Cleared existing tags for problem 1
+[DEBUG] 2026-10-07 16:37:55,400 views | Final tags after processing: []
+[INFO] 2026-10-07 16:37:57,419 polygon_api | Retrieved 17 test cases from Redis for polygon_id 596451
+[INFO] 2026-10-07 16:37:57,419 views | Retrieved test cases from Redis for test case migration to DB (saved Polygon API call)
+[DEBUG] 2026-10-07 16:37:57,420 views | test_cases for DB migration.
+[DEBUG] 2026-10-07 16:37:57,420 views | sample_tests: [{'index': 1, 'input': '4 9\r\n2 7 11 15\r\n', 'output': '1 2\r\n', 'description': '', 'is_sample': True}, {'index': 2, 'input': '3 6\r\n3 2 4\r\n', 'output': '2 3\r\n', 'description': '', 'is_sample': True}, {'index': 3, 'input': '2 6\r\n3 3\r\n', 'output': '1 2\r\n', 'description': '', 'is_sample': True}]
+[DEBUG] 2026-10-07 16:37:57,425 views | Sample test idx=0, input_data=4 9
+2 7 11 15, output_data=1 2
+[DEBUG] 2026-10-07 16:37:57,426 views | Sample test idx=1, input_data=3 6
+3 2 4, output_data=2 3
+[DEBUG] 2026-10-07 16:37:57,427 views | Sample test idx=2, input_data=2 6
+3 3, output_data=1 2
+[DEBUG] 2026-10-07 16:37:57,734 views | Fetched solutions: [{'name': 'solution.cpp', 'modificationTimeSeconds': 1791322659, 'length': 448, 'tag': 'MA', 'sourceType': 'cpp.gcc14-64-msys2-g++23'}]
+[INFO] 2026-10-07 16:37:58,053 views | Exiting index view
+[INFO] 2026-10-07 16:38:03,581 views | Entered index view with method=POST
+[DEBUG] 2026-10-07 16:38:03,583 views | POST data: polygon_id=596451, migrate_to_azure=1, migrate_to_db=None, migrate_test_cases_to_db=None, difficulty=, selected_tags=[], new_tag=
+[DEBUG] 2026-10-07 16:38:03,583 views | All POST data: {'csrfmiddlewaretoken': ['1aOMd1utjQzVrWHEdOsZSyWltC25bcj22CUO3f6i1FCxPZP1ZaLm3uqVYGK1rsV2'], 'problem_id': ['596451'], 'migrate_to_azure': ['1']}
+[INFO] 2026-10-07 16:38:03,583 views | Processing polygon_id=596451
+[DEBUG] 2026-10-07 16:38:03,587 views | db_problem=two-sum-problem-unique
+[DEBUG] 2026-10-07 16:38:04,691 views | Updated working copy: None
+[DEBUG] 2026-10-07 16:38:05,025 views | Fetched solutions: [{'name': 'solution.cpp', 'modificationTimeSeconds': 1791322659, 'length': 448, 'tag': 'MA', 'sourceType': 'cpp.gcc14-64-msys2-g++23'}]
+[INFO] 2026-10-07 16:38:05,359 views | Storage migration triggered for polygon_id=596451
+[INFO] 2026-10-07 16:38:06,409 polygon_api | pattern oj_dev_with_redis_storage_test_cases_1*
+[INFO] 2026-10-07 16:38:08,433 polygon_api | Fetching custom checker info for problem 596451
+[DEBUG] 2026-10-07 16:38:08,965 polygon_api | Raw checker info: check.cpp
+[INFO] 2026-10-07 16:38:08,966 polygon_api | Custom checker detected: {'name': 'check.cpp', 'type': 'custom'}
+[INFO] 2026-10-07 16:38:08,966 polygon_api | Starting storage migration for problem 596451
+[INFO] 2026-10-07 16:38:10,980 polygon_api | Retrieved 17 test cases from Redis for polygon_id 596451
+[INFO] 2026-10-07 16:38:10,980 polygon_api | Retrieved test cases from Redis (saved a Polygon API call)
+[INFO] 2026-10-07 16:38:31,247 polygon_api | Uploaded 17 test cases
+[INFO] 2026-10-07 16:38:31,248 polygon_api | Processing custom checker for problem 596451
+[INFO] 2026-10-07 16:38:31,248 polygon_api | Fetching custom checker info for problem 596451
+[DEBUG] 2026-10-07 16:38:31,547 polygon_api | Raw checker info: check.cpp
+[INFO] 2026-10-07 16:38:31,547 polygon_api | Custom checker detected: {'name': 'check.cpp', 'type': 'custom'}
+[INFO] 2026-10-07 16:38:31,548 polygon_api | Fetching custom checker file check.cpp via API for problem 596451
+[INFO] 2026-10-07 16:38:31,848 polygon_api | Successfully fetched custom checker file via API, content length: 698
+[INFO] 2026-10-07 16:38:31,849 polygon_api | Compiling custom checker in C:\Users\Dell\AppData\Local\Temp\tmpri39v3fo
+[INFO] 2026-10-07 16:38:31,851 polygon_api | Found g++ at: C:\MinGW\bin\g++.EXE
+[INFO] 2026-10-07 16:38:31,852 polygon_api | Source code written to: C:\Users\Dell\AppData\Local\Temp\tmpri39v3fo\custom_checker.cpp
+[INFO] 2026-10-07 16:38:31,852 polygon_api | Running compilation command: g++ -std=gnu++17 -O2 -o C:\Users\Dell\AppData\Local\Temp\tmpri39v3fo\custom_checker.exe C:\Users\Dell\AppData\Local\Temp\tmpri39v3fo\custom_checker.cpp
+[INFO] 2026-10-07 16:38:32,954 polygon_api | Compilation completed with return code: 1
+[DEBUG] 2026-10-07 16:38:32,955 polygon_api | Compilation stderr: C:\Users\Dell\AppData\Local\Temp\tmpri39v3fo\custom_checker.cpp:1:21: fatal error: testlib.h: No such file or directory
+ #include "testlib.h"
+                     ^
+compilation terminated.
+
+[ERROR] 2026-10-07 16:38:32,955 polygon_api | Compilation failed with return code 1
+[ERROR] 2026-10-07 16:38:32,955 polygon_api | stdout: 
+[ERROR] 2026-10-07 16:38:32,955 polygon_api | stderr: C:\Users\Dell\AppData\Local\Temp\tmpri39v3fo\custom_checker.cpp:1:21: fatal error: testlib.h: No such file or directory
+ #include "testlib.h"
+                     ^
+compilation terminated.
+
+[WARNING] 2026-10-07 16:38:32,955 polygon_api | Failed to compile custom checker, uploading source code instead
+[INFO] 2026-10-07 16:38:33,596 polygon_api | Completed storage migration for problem 596451
+[INFO] 2026-10-07 16:38:33,597 polygon_api | Fetching problem info for 596451
+[INFO] 2026-10-07 16:38:33,913 polygon_api | Polygon problem.info response: {'timeLimit': 2000, 'inputFile': 'stdin', 'outputFile': 'stdout', 'interactive': False, 'wellFormed': True, 'memoryLimit': 256, 'skipDuplicatedTestsValidation': False}
+[DEBUG] 2026-10-07 16:38:33,914 views | Polygon problem info: {'timeLimit': 2000, 'inputFile': 'stdin', 'outputFile': 'stdout', 'interactive': False, 'wellFormed': True, 'memoryLimit': 256, 'skipDuplicatedTestsValidation': False}
+[INFO] 2026-10-07 16:38:33,914 polygon_api | Downloading package for problem 596451
+[INFO] 2026-10-07 16:38:33,915 polygon_api | Fetching problem info for 596451
+[INFO] 2026-10-07 16:38:34,277 polygon_api | Polygon problem.info response: {'timeLimit': 2000, 'inputFile': 'stdin', 'outputFile': 'stdout', 'interactive': False, 'wellFormed': True, 'memoryLimit': 256, 'skipDuplicatedTestsValidation': False}
+[INFO] 2026-10-07 16:38:36,731 polygon_api | Successfully read problem.html content, length: 4293 characters
+[DEBUG] 2026-10-07 16:38:36,742 polygon_api | Cleaned up temporary directory: C:\Users\Dell\AppData\Local\Temp\tmpr4qpkrs4
+[DEBUG] 2026-10-07 16:38:36,743 views | Downloaded and extracted problem_html_content, length: 4293
+[INFO] 2026-10-07 16:38:36,744 views | Entered parse_problem_html with content length=4293
+[DEBUG] 2026-10-07 16:38:36,744 views | Extracted title=two-sum-problem-unique, legend length=448, input_format length=427, output_format length=146
+[INFO] 2026-10-07 16:38:36,745 views | Exiting parse_problem_html
+[DEBUG] 2026-10-07 16:38:36,745 views | Parsed html_data: {'title': 'two-sum-problem-unique', 'legend': '<p>You are given an array of integers $$$a_1, a_2, \\dots, a_n$$$ and an integer target $$$t$$$.</p><p>Find two <span class="tex-font-style-bf">different</span> positions $$$i$$$ and $$$j$$$ ($$$i \\ne j$$$) such that $$$a_i + a_j = t$$$.</p><p>It is guaranteed that exactly one such pair of positions exists. The same element cannot be used twice, but two different positions may contain equal values. You may print the two indices in any order.</p>', 'input_format': '<p>The first line contains two integers $$$n$$$ and $$$t$$$ ($$$2 \\le n \\le 10^4$$$, $$$-10^9 \\le t \\le 10^9$$$) — the number of elements in the array and the target sum.</p><p>The second line contains $$$n$$$ integers $$$a_1, a_2, \\dots, a_n$$$ ($$$-10^9 \\le a_i \\le 10^9$$$) — the elements of the array.</p><p>It is guaranteed that there is exactly one pair of distinct indices $$$(i, j)$$$ such that $$$a_i + a_j = t$$$.</p>', 'output_format': '<p>Print two distinct integers — the $$$1$$$-based indices $$$i$$$ and $$$j$$$ such that $$$a_i + a_j = t$$$. You may print them in any order.</p>', 'notes': '<p>In the first example, $$$a_1 + a_2 = 2 + 7 = 9$$$, so the answer is <span class="tex-font-style-tt">1 2</span>.</p><p>In the second example, $$$a_2 + a_3 = 2 + 4 = 6$$$. Note that $$$a_1 = 3$$$ cannot be paired with itself, so <span class="tex-font-style-tt">1 1</span> is not a valid answer.</p><p>In the third example, both elements are equal to $$$3$$$, and since they are at different positions, <span class="tex-font-style-tt">1 2</span> is a valid answer.</p>'}
+[INFO] 2026-10-07 16:38:38,770 polygon_api | Retrieved 17 test cases from Redis for polygon_id 596451
+[INFO] 2026-10-07 16:38:38,770 views | Retrieved test cases from Redis for test case migration to DB (saved Polygon API call)
+[DEBUG] 2026-10-07 16:38:39,091 views | checker_type=check.cpp
+[INFO] 2026-10-07 16:38:39,091 polygon_api | Fetching custom checker info for problem 596451
+[DEBUG] 2026-10-07 16:38:39,393 polygon_api | Raw checker info: check.cpp
+[INFO] 2026-10-07 16:38:39,393 polygon_api | Custom checker detected: {'name': 'check.cpp', 'type': 'custom'}
+[INFO] 2026-10-07 16:38:39,393 polygon_api | Fetching test cases for 596451, testset
+[DEBUG] 2026-10-07 16:38:39,755 views | test_case_count=17
+[INFO] 2026-10-07 16:38:39,756 views | Exiting index view

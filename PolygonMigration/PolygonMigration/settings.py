@@ -133,6 +133,13 @@ AZURE_CLIENT_ID = os.getenv("AZURE_CLIENT_ID")
 AZURE_USERNAME = os.getenv("AZURE_USERNAME")
 AZURE_PASSWORD = os.getenv("AZURE_PASSWORD")
 AZURE_CONTAINER_NAME = os.getenv("AZURE_CONTAINER_NAME")
+# Storage provider selection and S3-compatible settings
+STORAGE_PROVIDER = os.getenv("STORAGE_PROVIDER", "azure").lower()
+AWS_ACCESS_KEY_ID = os.getenv("AWS_ACCESS_KEY_ID")
+AWS_SECRET_ACCESS_KEY = os.getenv("AWS_SECRET_ACCESS_KEY")
+AWS_REGION = os.getenv("AWS_REGION")
+AWS_S3_BUCKET_NAME = os.getenv("AWS_S3_BUCKET_NAME")
+AWS_S3_ENDPOINT_URL = os.getenv("AWS_S3_ENDPOINT_URL")
 
 REDIS_HOST = os.getenv("REDIS_HOST")
 REDIS_PORT = os.getenv("REDIS_PORT")
